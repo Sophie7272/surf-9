@@ -1,0 +1,42 @@
+.main-footer {
+  margin-top: auto;
+  color: black;
+  font-size: 21px;  
+  background-color: #fff;
+  min-height: rem(93px);
+
+  @include tablets {
+    min-height: rem(107px);
+  }
+
+  @include phones {
+    min-height: rem(150px)
+  }
+}
+
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 0 17px;
+
+  @include phones {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__col {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+  flex: 1;
+  flex-direction: column;
+}
+
+
+.footer__col--align--right {
+  justify-content: flex-end;
+}
